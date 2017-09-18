@@ -1,1 +1,0 @@
-{"message":"test","retcode":"0","event":{"eventType":"AgentEvent_Ringing","workNo":"49999","content":{"caller":"18537111630","transfer":"no","callid":"145640404337","transfrom":"","called":"49999","type":"main"}}}
