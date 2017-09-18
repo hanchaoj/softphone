@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联络云软电话 Demo</title>
+<link rel="icon" href="favicon.ico" />
+<link href="page/style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="page/openjs/jquery-1.6.2.js"></script>
+<script type="text/javascript" src="page/openjs/json.js"></script>
+<script type="text/javascript" src="page/js/agentDemo.js"></script>
+<script type="text/javascript" src="http://103.28.214.24:9069/agentgateway/resource-js"></script>
+<script type="text/javascript">
+	REST.apiURL = "http://103.28.214.24:9069/agentgateway/resource";
+</script>
+
+<script type="text/javascript" src="page/js/agentEvent.js"></script>
+
+<script type="text/javascript" src="page/js/agentEventDetail.js"></script>
+<script type="text/javascript" src="page/js/agentCommon.js"></script>
+<script type="text/javascript" src="page/js/eventHandle.js"></script>
+<script type="text/javascript" src="page/js/eventProcess.js"></script>
+
+</head>
+<body>
+<div id="agentDemo"  style="background-color:#5a5656"></div>
+
+<!--<div><input type='button' id='aa' value='getCallData' onclick='agentCallData_getCallData();'/>
+	<input type='button' id='bb' value='setCallData' onclick='agentCallData_setCallData();'/></div>	-->
+<div><br><br>
+	<div>Agent Console</div>
+	<div><input type="button" value="Clean Log" onclick="agentConsole_cleanLog()"/></div>
+	<div style="height: 300px;overflow-y: auto;overflow-x:hidden;">
+		<table id="agentConsole" cellpadding="1" cellspacing="0" class="content_form_table" style="width: 100%">
+			<colgroup>
+				<col width="150px"/>
+			</colgroup>
+        	<thead>
+            	<tr>
+                	<td>
+                      	Date
+                    </td>
+                    <td>
+                      	Message
+                    </td>
+                </tr>
+            </thead>
+			<tbody>
+            </tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

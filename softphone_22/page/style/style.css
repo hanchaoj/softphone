@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.panel {
+	height: 60px;
+}
+
+.mainbtn {
+	/* float: left; */
+	height: 60px;
+	/* line-height: 66px; */
+	padding-left: 30px;
+}
+
+.agentState {
+	width: 450px;
+	float: right;
+	height: 10px;
+	padding-top: 5px;
+	padding-right: 15px;
+}
+
+.state_m1 {
+	float:left;
+	/*margin-left:20px;
+	padding-top: 10px;*/
+	color: white;
+	font-size: 15px;
+}
+
+
+
+.autoAnswer{
+	color: white;
+	font-size: 15px;
+}
+.outbound {
+	width: 310px;
+	height: 100px;
+	float: left;
+	line-height: 100px;
+}
+
+.radioPanel {
+	padding-top: 24px;
+}
+
+#workNo {
+	width: 90px;
+}
+
+.comminput {
+
+	border-radius: 5px 5px 5px 5px;
+	border: 0;
+	height: 25px;
+	background: #fff;
+	font-size: 15px;
+	color: #666;
+	width: 110px;
+
+}
+
+.commbtn {
+	width: 45px;
+	height: 25px;
+	border-radius: 5px 5px 5px 5px;
+	background: #ff9d48;
+	border: 0px;
+	cursor: pointer;
+	margin:0 5px 0 1px;
+}
+
+#agentCallNum {
+	width: 115px;
+	height: 20px;
+	padding: 5px;
+	background: #fff;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 18px;
+	color: #666;
+	border: 0;
+	margin-top: 30px;
+}
+
+.link_a {
+	color: #fff;
+	font-size: 9px;
+	cursor: pointer;
+}
+
+.btn {
+	width: auto;
+	height: 30px;
+	border: 0px;
+	padding-left: 38px;
+	/* line-height: 66px; */
+	cursor: pointer;
+	background-color: Transparent;
+	margin-top:5px;
+	font-size: 15px;
+	
+}
+
+#agentLogin_login {
+	background: URL(image/qianru.png) no-repeat;
+	padding-right: 10px;
+	
+	
+}
+
+#agentLogin_logout {
+	background: URL(image/qianchu.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentCallAnswer {
+	background: URL(image/yingda.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentCallHangup {
+	background: URL(image/guaji.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentStatusSayIdle {
+	background: URL(image/shimang.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentStatusSayBusy {
+	background: URL(image/shimang.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentStatusRest {
+	background: URL(image/xiaoxiu.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentStatusInWork {
+	background: URL(image/huihuaxiaojie.png) no-repeat;
+	padding-right: 40px;
+}
+
+#zhuanjie {
+	background: URL(image/zhuanjie.png) no-repeat;
+	padding-right: 10px;
+}
+
+#huiyi {
+	background: URL(image/huiyi.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentCallHold {
+	background: URL(image/zixun.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentCallUnHold {
+	background: URL(image/zixun.png) no-repeat;
+	padding-right: 10px;
+}
+
+#agentCallCancel {
+	padding-right: 15px;
+}
+
+#agentCallConfirm {
+	padding-right: 15px;
+}
+
+.input::-webkit-input-placeholder {
+	font-size: 15px;
+	line-height: 50px;
+	border: none;
+}
+
+.input_i {
+	height: 30px;
+	padding: 1px;
+	background: #fff;
+	border-radius: 5px 0 0 5px;
+	font-size: 18px;
+	color: #666;
+}
+.input_s {
+	height: 36px;
+	width: 180px;
+	padding: 1px;
+	background: #fff;
+	border-radius: 5px 0 0 5px;
+	font-size: 18px;
+	color: #666;
+}
+.stateP li {
+	display: block;
+	float: left;
+	overflow: hidden;
+	zoom: 1;
+	padding: 0 25px;
+	color: #666;
+	padding-top: 6px;
+}
+
+.stateU li {
+	display: block;
+	float: center;
+	overflow: hidden;
+	zoom: 1;
+	padding: 0 25px;
+	color: #666;
+	padding-top: 10px;
+}
+
+.gray {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+
+#confirm {
+	width: 50px;
+	height: 30px;
+	background: #ff9d48;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFF;
+	font-size: 18px;
+	border: 2px;
+	float: center;
+}
+
+#cancel {
+	width: 50px;
+	height: 30px;
+	background: #ff9d48;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFF;
+	font-size: 18px;
+	border: 2px;
+	float: center;
+}
+
+.label-span {
+	text-align: center;
+}
+#transferOuter{
+	width:121px; 
+	height:20px; 
+	padding:5px; 
+	background:#fff; 
+	border-radius:5px 5px 5px 5px; 
+	font-size:18px; 
+	color:#666; 
+	border:0;
+	margin-top:10px;
+}
+.select-box{
+	width:110px; 
+	height:30px; 
+	padding:5px; 
+	background:#fff; 
+	border-radius:5px 5px 5px 5px; 
+	font-size:18px; 
+	color:#666; 
+	border:0; 
+	margin-top:20px;
+}

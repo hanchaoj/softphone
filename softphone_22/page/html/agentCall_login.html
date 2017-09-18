@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联络云软电话 登录</title>
+<link href="../style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../openjs/jquery-1.6.2.js"></script>
+<script type="text/javascript" src="../openjs/json.js"></script>
+<script type="text/javascript" src="http://103.28.214.24:9069/agentgateway/resource-js"></script>
+<script type="text/javascript">
+	REST.apiURL = "http://103.28.214.24:9069/agentgateway/resource";
+</script>
+<script type="text/javascript" src="../js/agentEvent.js"></script>
+
+<script type="text/javascript">
+function closeWin()
+{
+	window.opener=null; 
+	window.open('','_self'); 
+	window.close(); 
+}
+function returnValue(){
+	window.opener.$("#agentLogin_agentId").val($("#agentLogin_agentId").val());
+	window.opener.$("#agentLogin_password").val($("#agentLogin_password").val());
+	window.opener.$("#agentLogin_phonenumber").val($("#agentLogin_phonenumber").val());
+	window.opener.$("#skillgroup").val($("#skillgroup").val());
+	window.opener.$("#winFlag").val("true");
+    closeWin();
+}
+</script>
+</head>
+<body>
+
+<div class="stateU">
+	<ul>
+		<li>帐 &nbsp;&nbsp;&nbsp;号：<input class="input_i" value="" type="text" placeholder="用户帐号" id="agentLogin_agentId"></li><br/>
+		<li>密 &nbsp;&nbsp;&nbsp;码：<input class="input_i" value="" type="text" placeholder="密码" id="agentLogin_password"></li><br/>
+		<li>分机号：<input class="input_i" value="" type="text" placeholder="分机号" id="agentLogin_phonenumber"></li><br/>
+		<li>
+		技能队列：<select class="input_s" name="skillgroup" id="skillgroup"></select>
+		</li><br/>
+	</ul>
+	<div class="label-span"><input type="button" id="confirm" value="确认"  onclick="returnValue();"/>
+	<input type="button" id="cancel" value="取消" onclick="closeWin();"/></div>
+</div>
+</body>
+</html>
